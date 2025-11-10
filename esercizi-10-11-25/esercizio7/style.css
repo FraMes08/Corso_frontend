@@ -1,0 +1,17 @@
+p{
+    top: 50px;
+    width: 300px;
+}
+main{
+    width: 300px;
+}
+header{
+    position: fixed;
+    background-color: lightgray;
+}
+h2{
+    position: sticky;
+    background-color: lightblue;
+    top: 0;
+
+}

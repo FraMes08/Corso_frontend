@@ -1,0 +1,16 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+#div1{
+    overflow: visible;
+}
+#div2{
+    overflow: hidden;
+}
+#div3{
+    overflow: scroll;
+}
+#div4{
+    overflow: auto;
+}
