@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.left-sidebar{
+    order: 1;
+    flex: 0 0 20%;
+    padding: 10px;
+    overflow: scroll;
+    height: 100vh;
+}
+.main-content{
+    order: 2;
+    flex: 0 0 60%;
+    padding: 10px;
+    overflow: scroll;
+    height: 100vh;
+}
+.right-sidebar{
+    order: 3;
+    flex: 0 0 20%;
+    padding: 10px;
+    overflow: scroll;
+    height: 100vh;
+}
+.sidebars{
+    display: flex;
+    flex-direction: row;
+}
+.left-sidebar, .main-content, .right-sidebar{
+    background-color: lightgray;
+}
+
+.header, .footer{
+    background-color: lightsalmon;
+    text-align: center;
+    padding: 10px;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+/* Tablet: main 50% in alto, sidebars 50% in basso affiancate */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .content{
+        flex-direction: column;
+        flex: 1;
+    }
+    .main-content{
+        order: 1;
+        flex: 0 0 50%;
+        height: auto;
+    }
+    .sidebars{
+        order: 2;
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: row;
+    }
+    .left-sidebar, .right-sidebar{
+        flex: 1;
+        height: auto;
+    }
+
+}
+
+/* Mobile: tutto impilato */
+@media (max-width: 767px) {
+
+    .content{
+        flex-direction: column;
+    }
+    .main-content{
+        order: 1;
+        flex: 0 0 auto;
+        min-height: 300px;
+        height: auto;
+    }
+    .sidebars{
+        order: 2;
+        flex-direction: column;
+        flex: 1;
+    }
+    .left-sidebar, .right-sidebar{
+        flex: 0 0 auto;
+        min-height: 150px;
+    }
+
+}
