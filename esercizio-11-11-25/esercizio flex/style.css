@@ -55,7 +55,7 @@
     z-index: 100;
 }
 
-/* Tablet: main 50% in alto, sidebars 50% in basso affiancate */
+
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .content{
@@ -80,7 +80,7 @@
 
 }
 
-/* Mobile: tutto impilato */
+
 @media (max-width: 767px) {
 
     .content{
