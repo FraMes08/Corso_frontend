@@ -1,0 +1,26 @@
+/* ...existing code... */
+#item-list li,
+#item-list li .text-container {
+    -webkit-user-select: none; /* Safari, Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Standard */
+    -webkit-touch-callout: none; /* iOS: disabilita menu tocco lungo */
+}
+
+/* opzionale: rimuove il background di selezione se qualche browser lo mostra */
+#item-list li::selection,
+#item-list li .text-container::selection {
+    background: transparent;
+}
+/* ...existing code... */
+
+
+
+
+.completed {
+    text-decoration: line-through;
+}
+.highlighted {
+    background-color: lightgreen;
+}
