@@ -104,7 +104,7 @@ all.addEventListener('click', showAll);
 function showAll() {
     const items = ul.children;
     for (let item of items) {
-        item.style.display = 'block';
+        item.style.display = 'list-item';
     }
 }
 
@@ -117,7 +117,7 @@ function showCompleted() {
         if (!item.firstChild.classList.contains('completed')) {
             item.style.display = 'none';
         } else {
-            item.style.display = 'block';
+            item.style.display = 'list-item';
         }
     }
 }
@@ -130,7 +130,7 @@ function showHighlighted() {
         if (!item.firstChild.classList.contains('highlighted')) {
             item.style.display = 'none';
         } else {
-            item.style.display = 'block';
+            item.style.display = 'list-item';
         }
     }
 }
