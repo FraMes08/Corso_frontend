@@ -1,0 +1,10 @@
+let playlist = ["Heat", "Sunrise", "Echo"];
+console.log("playlist iniziale: ", playlist);
+playlist.push("Midnight", "Waves");
+console.log("playlist con elementi aggiunti: ", playlist);
+let primoElemento = playlist.shift();
+playlist.push(primoElemento);
+console.log("playlist con il primo elemento spostato in fondo: ", playlist);
+let copiaPlaylist = playlist.slice(1, 4);
+console.log("playlist finale: ", playlist);
+console.log("copia degli elementi centrali: ", copiaPlaylist);

@@ -1,0 +1,10 @@
+let messaggi = ["hey", "ciao", "tutto bene?", "ok"];
+console.log("messaggi iniziali: ", messaggi);
+messaggi.push("arrivederci");
+messaggi.unshift("salve");
+console.log("messaggi dopo push e unshift: ", messaggi);
+messaggi.pop();
+console.log("messaggi dopo pop: ", messaggi);
+let messaggiCentrali = messaggi.slice(1, messaggi.length - 1);
+console.log("messaggi dopo slice: ", messaggi);
+console.log("messaggi centrali (senza primo e ultimo): ", messaggiCentrali);

@@ -1,0 +1,11 @@
+let scorte = [12, 5, 8, 3, 9];
+console.log("Array originale:", scorte);
+scorte.push(7, 4);
+console.log("Array dopo l'aggiunta di 7 e 4:", scorte);
+scorte.shift();
+let ultimoElemento = scorte.pop();
+scorte.unshift(ultimoElemento);
+console.log("Array dopo le operazioni di rimozione e aggiunta:", scorte);
+let scorteCentrali = scorte.slice(1, scorte.length - 1);
+console.log("Array originale dopo slice:", scorte);
+console.log("Elementi centrali (senza primo e ultimo):", scorteCentrali);
