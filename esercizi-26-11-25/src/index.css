@@ -1,0 +1,227 @@
+:root {
+    /*lightmode (default) */
+    --color-bg-primary: #f8f9fa; 
+    --color-bg-secondary: #ffffff; 
+    --color-text-primary: #212529;
+    --color-text-secondary: #6c757d;
+    --color-border: #dee2e6;
+    --color-accent-primary: #007bff;
+    --color-accent-hover: #0056b3;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+}
+    /* darkmode */
+.dark {
+    --color-bg-primary: #121212;
+    --color-bg-secondary: #1e1e1e;
+    --color-text-primary: #e9ecef;
+    --color-text-secondary: #adb5bd;
+    --color-border: #343a40;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+    /* atoms/button */
+.button {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.button-primary {
+    background-color: var(--color-accent-primary);
+    color: white;
+}
+.button-primary:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.button-danger {
+    background-color: var(--color-danger);
+    color: white;
+}
+.button-danger:hover {
+    opacity: 0.8;
+}
+
+.button-secondary {
+    background-color: var(--color-border);
+    color: var(--color-text-primary);
+}
+.button-secondary:hover {
+    background-color: var(--color-text-secondary);
+}
+
+.button-text {
+    background: none;
+    color: var(--color-accent-primary);
+    padding: 0;
+}
+.button-text:hover {
+    color: var(--color-accent-hover);
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+    /* atoms/input */
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+.input:focus {
+    border-color: var(--color-accent-primary);
+    outline: none;
+}
+
+    /* atoms/checkbox */
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+    /* molecules/todoItem */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+    background-color: var(--color-bg-secondary);
+}
+
+.todo-item-completed {
+    opacity: 0.6;
+}
+
+.todo-item-text-container {
+    flex-grow: 1;
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.todo-item-text {
+    font-size: 1.125rem;
+    color: var(--color-text-primary);
+    word-break: break-word;
+}
+
+.todo-item-completed .todo-item-text {
+    text-decoration: line-through;
+    color: var(--color-text-secondary);
+}
+
+.todo-item-date {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+.todo-item-actions {
+    display: flex;
+    gap: 8px;
+}
+
+    /* organisms/todoForm */
+.todo-form {
+    display: flex;
+    gap: 8px;
+    padding: 1rem;
+    background-color: var(--color-bg-secondary);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+.todo-form .input-group {
+    flex-grow: 1;
+}
+
+    /* molecules/filterGroup */
+.filter-group {
+    display: flex;
+    gap: 8px;
+    padding: 0.5rem;
+    background-color: var(--color-bg-primary);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+    /* organisms/todoList */
+.todo-list-container {
+    padding: 1rem;
+    background-color: var(--color-bg-secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.todo-list-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.todo-count {
+    border-top: 1px solid var(--color-border);
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+    /* css vari */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.app-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--color-accent-primary);
+}
+
+.sort-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.checkbox{
+    cursor: pointer;
+    margin-top: 15px;
+}
