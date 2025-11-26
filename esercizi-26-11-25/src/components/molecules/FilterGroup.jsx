@@ -14,7 +14,7 @@ const FilterGroup = ({ filter, setFilter }) => {
         <Button
           key={f.value}
           onClick={() => setFilter(f.value)}
-          // Evidenzia il filtro attivo
+          
           variant={filter === f.value ? 'primary' : 'secondary'}
         >
           {f.label}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Button = ({ onClick, children, variant = 'primary', type = 'button', disabled = false }) => {
-  // Mappatura delle varianti alle classi CSS
+  //vari clssi per i buttons
   let variantClass = '';
   switch (variant) {
     case 'primary':
