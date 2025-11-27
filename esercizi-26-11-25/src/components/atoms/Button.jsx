@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Button = ({ onClick, children, variant = 'primary', type = 'button', disabled = false }) => {
   //vari clssi per i buttons
   let variantClass = '';

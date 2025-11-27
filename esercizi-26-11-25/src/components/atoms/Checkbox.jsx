@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Checkbox = ({ checked, onChange }) => {
   return (
     <input

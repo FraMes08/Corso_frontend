@@ -1,4 +1,3 @@
-import React from 'react';
 import TodoItem from '../molecules/TodoItem';
 import FilterGroup from '../molecules/FilterGroup';
 
