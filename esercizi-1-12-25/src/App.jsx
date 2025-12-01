@@ -1,11 +1,13 @@
-import RegistrationForm from "../components/RegistrationForm"
+/* import RegistrationForm from "./components/RegistrationForm" */
+import RegistrationFormHook from "./hooks/RegistrationFormHook"
 
 function App() {
 
   return (
     <>
 
-      <RegistrationForm />
+      {/* <RegistrationForm /> */}
+      <RegistrationFormHook />
 
     </>
   )
