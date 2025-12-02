@@ -1,0 +1,28 @@
+.navigation-tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-tab {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #c0c0c0;
+  font-size: 1.1em;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-tab:hover {
+  color: var(--color-text);
+}
+
+.nav-tab.active {
+  color: var(--color-neon-accent);
+  border-bottom: 3px solid var(--color-neon-accent);
+  font-weight: bold;
+}

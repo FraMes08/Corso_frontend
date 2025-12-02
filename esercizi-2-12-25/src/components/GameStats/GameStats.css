@@ -1,0 +1,47 @@
+.game-stats-container {
+  background-color: #1f1c39;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1400px;
+  border-radius: 8px;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.stat-box {
+  flex-basis: 30%;
+  padding: 10px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+}
+
+.stat-value {
+  font-size: 2em;
+  color: var(--color-neon-accent);
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  margin: 0;
+}
+
+.stats-list-status {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.9em;
+}
+
+h3, h4 {
+    text-align: center;
+}
