@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #1a1a1a;
+  --color-text: #ffffff;
+  --color-neon-accent: #00ff88; 
+  --color-neon-warning: #ff6b6b;
+  --color-neon-info: #4ecdc4;
+  --color-neon-yellow: #f4d03f; 
+  --color-neon-blue: #3498db;
+  --color-neon-gray: #7f8c8d;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(180deg, #0F1429 0%, #242B42 50%, #0F1429 100%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  min-height: 100vh;
+  padding: 0;
+}

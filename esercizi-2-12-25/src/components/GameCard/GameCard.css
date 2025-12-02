@@ -1,0 +1,52 @@
+.game-card {
+  background-color: #1f1c39;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%; 
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.3);
+}
+
+.card-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-title {
+  margin-top: 0;
+  color: var(--color-text);
+  font-size: 1.4em;
+}
+
+.card-rating {
+  font-weight: bold;
+  margin: 8px 0;
+}
+.rating-high { color: var(--color-neon-accent); } 
+.rating-medium { color: var(--color-neon-yellow); } 
+.rating-low { color: var(--color-neon-warning); } 
+
+.card-status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #1a1a1a; 
+}
+
+.badge-completed { background-color: var(--color-neon-accent); }
+.badge-in-progress { background-color: var(--color-neon-yellow); }
+.badge-wishlist { background-color: var(--color-neon-blue); color: var(--color-text); } /* Testo chiaro per blu */
+.badge-abandoned { background-color: var(--color-neon-gray); }

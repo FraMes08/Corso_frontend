@@ -1,0 +1,50 @@
+/* header */
+
+body {
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0F1429;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+#navigation a{
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#login{
+    background-color: #00D9FF;
+    color: #0F1429;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logo{
+    color: #B333FF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+
+    background: linear-gradient(90deg, #B333FF 0%, #00D9FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
